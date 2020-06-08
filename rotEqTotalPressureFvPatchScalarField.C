@@ -73,23 +73,23 @@ rotEqTotalPressureFvPatchScalarField
 Foam::rotEqTotalPressureFvPatchScalarField::
 rotEqTotalPressureFvPatchScalarField
 (
-    const rotEqTotalPressureFvPatchScalarField& rtppsf
+    const rotEqTotalPressureFvPatchScalarField& retppsf
 )
 :
-    totalPressureFvPatchScalarField(rtppsf),
-    omega_(rtppsf.omega_, false)
+    totalPressureFvPatchScalarField(retppsf),
+    omega_(retppsf.omega_, false)
 {}
 
 
 Foam::rotEqTotalPressureFvPatchScalarField::
 rotEqTotalPressureFvPatchScalarField
 (
-    const rotEqTotalPressureFvPatchScalarField& rtppsf,
+    const rotEqTotalPressureFvPatchScalarField& retppsf,
     const DimensionedField<scalar, volMesh>& iF
 )
 :
-    totalPressureFvPatchScalarField(rtppsf, iF),
-    omega_(rtppsf.omega_, false)
+    totalPressureFvPatchScalarField(retppsf, iF),
+    omega_(retppsf.omega_, false)
 {}
 
 
