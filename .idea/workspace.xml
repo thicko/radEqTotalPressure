@@ -29,10 +29,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49a05039-cf6e-4dee-9ca3-abdddd8e26bc" name="Default Changelist" comment="Added rMin_ and dp0dr_ variables.">
+    <list default="true" id="49a05039-cf6e-4dee-9ca3-abdddd8e26bc" name="Default Changelist" comment="First implementation. Not 100% convinced that radius calculation is general yet.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Make/files" beforeDir="false" afterPath="$PROJECT_DIR$/Make/files" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Make/options" beforeDir="false" afterPath="$PROJECT_DIR$/Make/options" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rotEqTotalPressureFvPatchScalarField.C" beforeDir="false" afterPath="$PROJECT_DIR$/rotEqTotalPressureFvPatchScalarField.C" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rotEqTotalPressureFvPatchScalarField.H" beforeDir="false" afterPath="$PROJECT_DIR$/rotEqTotalPressureFvPatchScalarField.H" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +46,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupGrunt">
+      <scroll-view-position x="0" y="0" />
+    </layout>
   </component>
   <component name="ProjectId" id="1d2NpvnDqGf7iM5ItH4tjza29Nh" />
   <component name="ProjectViewState">
@@ -86,7 +92,7 @@
       <updated>1591619414861</updated>
       <workItem from="1591619418506" duration="212000" />
       <workItem from="1591619632299" duration="12780000" />
-      <workItem from="1591703672959" duration="6749000" />
+      <workItem from="1591703672959" duration="15016000" />
     </task>
     <task id="LOCAL-00001" summary="Added rMin_ and dp0dr_ variables.">
       <created>1591640431480</created>
@@ -95,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591640431480</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="First implementation. Not 100% convinced that radius calculation is general yet.">
+      <created>1591715030986</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1591715030986</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,7 +128,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added rMin_ and dp0dr_ variables." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added rMin_ and dp0dr_ variables." />
+    <MESSAGE value="First implementation. Not 100% convinced that radius calculation is general yet." />
+    <option name="LAST_COMMIT_MESSAGE" value="First implementation. Not 100% convinced that radius calculation is general yet." />
   </component>
   <component name="WindowStateProjectService">
     <state x="2542" y="265" width="666" height="584" key="#libmyFiniteVolume.so" timestamp="1591632866949">
@@ -134,9 +148,13 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="640" height="476" key="ImportCMakeProjectWizard.topPanel/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1591619625936" />
-    <state x="2475" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1591640433484">
+    <state x="2475" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1591715033355">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2475" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1591640433484" />
+    <state x="2475" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1591715033355" />
+    <state x="2754" y="409" width="250" height="278" key="jetbrains.javascript.buildTools.run-task-popup" timestamp="1591715040778">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2754" y="409" width="250" height="278" key="jetbrains.javascript.buildTools.run-task-popup/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1591715040778" />
   </component>
 </project>

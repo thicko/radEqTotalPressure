@@ -120,7 +120,13 @@ void Foam::rotEqTotalPressureFvPatchScalarField::updateCoeffs()
     vector axisHat = om/mag(om);
     tmp<vectorField> rotationVelocity =
         om ^ (patch().Cf() - axisHat*(axisHat & patch().Cf()));
-    tmp<scalarField> p0Eq = p0() + pGrad*(mag(patch().Cf() ^ axisHat) - r0);
+
+    tmp<scalarField> r = mag(patch().Cf() ^ axisHat);
+
+    const scalarField pCorr
+    (
+        pGrad*(r - r0)
+    );
 
     const vectorField Up
     (
@@ -128,8 +134,7 @@ void Foam::rotEqTotalPressureFvPatchScalarField::updateCoeffs()
       + rotationVelocity
     );
 
-
-    totalPressureFvPatchScalarField::updateCoeffs(p0() ,Up);
+    totalPressureFvPatchScalarField::updateCoeffs(p0() + pCorr, Up);
 }
 
 
@@ -138,7 +143,6 @@ void Foam::rotEqTotalPressureFvPatchScalarField::write(Ostream& os) const
     totalPressureFvPatchScalarField::write(os);
     writeEntry(os, omega_());
     writeEntry(os, dp0dr_());
-    writeEntry(os, rRef_);
 }
 
 
