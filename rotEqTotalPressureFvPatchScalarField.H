@@ -81,7 +81,7 @@ namespace Foam
 /*---------------------------------------------------------------------------*\
            Class rotEqTotalPressureFvPatchScalarField Declaration
 \*---------------------------------------------------------------------------*/
-// TODO: Constructors, work out maths for general radius vector.
+
 
 class rotEqTotalPressureFvPatchScalarField
 :
@@ -92,11 +92,11 @@ class rotEqTotalPressureFvPatchScalarField
         //- Angular velocity of the frame
         autoPtr<Function1<vector>> omega_;
 
-        //- Radial location of p0
-        autoPtr<scalar> rMin_;
-
         //- Radial gradient of p0
-        autoPtr<scalar> dp0dr_;
+        autoPtr<Function1<scalar>> dp0dr_;
+
+        //- Radial location of p0
+        scalar rRef_;
 
 
 public:

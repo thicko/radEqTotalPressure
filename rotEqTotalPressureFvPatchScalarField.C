@@ -39,7 +39,9 @@ rotEqTotalPressureFvPatchScalarField
 )
 :
     totalPressureFvPatchScalarField(p, iF),
-    omega_()
+    omega_(),
+    dp0dr_(),
+    rRef_()
 {}
 
 
@@ -53,7 +55,9 @@ rotEqTotalPressureFvPatchScalarField
 )
 :
     totalPressureFvPatchScalarField(ptf, p, iF, mapper),
-    omega_(ptf.omega_, false)
+    omega_(ptf.omega_, false),
+    dp0dr_(ptf.dp0dr_, false),
+    rRef_(ptf.rRef_)
 {}
 
 
@@ -66,7 +70,9 @@ rotEqTotalPressureFvPatchScalarField
 )
 :
     totalPressureFvPatchScalarField(p, iF, dict),
-    omega_(Function1<vector>::New("omega", dict))
+    omega_(Function1<vector>::New("omega", dict)),
+    dp0dr_(Function1<scalar>::New("dp0dr", dict)),
+    rRef_(readScalar(dict.lookup("rRef")))
 {}
 
 
@@ -77,7 +83,9 @@ rotEqTotalPressureFvPatchScalarField
 )
 :
     totalPressureFvPatchScalarField(retppsf),
-    omega_(retppsf.omega_, false)
+    omega_(retppsf.omega_, false),
+    dp0dr_(retppsf.dp0dr_, false),
+    rRef_(retppsf.rRef_)
 {}
 
 
@@ -89,7 +97,9 @@ rotEqTotalPressureFvPatchScalarField
 )
 :
     totalPressureFvPatchScalarField(retppsf, iF),
-    omega_(retppsf.omega_, false)
+    omega_(retppsf.omega_, false),
+    dp0dr_(retppsf.dp0dr_, false),
+    rRef_(retppsf.rRef_)
 {}
 
 
@@ -104,10 +114,13 @@ void Foam::rotEqTotalPressureFvPatchScalarField::updateCoeffs()
 
     const scalar t = this->db().time().timeOutputValue();
     const vector om = omega_->value(t);
+    const scalar r0 = rRef_;
+    const scalar pGrad = dp0dr_->value(t);
 
     vector axisHat = om/mag(om);
     tmp<vectorField> rotationVelocity =
         om ^ (patch().Cf() - axisHat*(axisHat & patch().Cf()));
+    tmp<scalarField> p0Eq = p0() + pGrad*(mag(patch().Cf() ^ axisHat) - r0);
 
     const vectorField Up
     (
@@ -115,7 +128,8 @@ void Foam::rotEqTotalPressureFvPatchScalarField::updateCoeffs()
       + rotationVelocity
     );
 
-    totalPressureFvPatchScalarField::updateCoeffs(p0(), Up);
+
+    totalPressureFvPatchScalarField::updateCoeffs(p0() ,Up);
 }
 
 
@@ -123,6 +137,8 @@ void Foam::rotEqTotalPressureFvPatchScalarField::write(Ostream& os) const
 {
     totalPressureFvPatchScalarField::write(os);
     writeEntry(os, omega_());
+    writeEntry(os, dp0dr_());
+    writeEntry(os, rRef_);
 }
 
 
