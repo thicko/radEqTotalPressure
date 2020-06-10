@@ -29,10 +29,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49a05039-cf6e-4dee-9ca3-abdddd8e26bc" name="Default Changelist" comment="First implementation. Not 100% convinced that radius calculation is general yet.">
+    <list default="true" id="49a05039-cf6e-4dee-9ca3-abdddd8e26bc" name="Default Changelist" comment="Tested over a few time-steps.">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Make/files" beforeDir="false" afterPath="$PROJECT_DIR$/Make/files" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Make/options" beforeDir="false" afterPath="$PROJECT_DIR$/Make/options" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rotEqTotalPressureFvPatchScalarField.C" beforeDir="false" afterPath="$PROJECT_DIR$/rotEqTotalPressureFvPatchScalarField.C" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,6 +71,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
   </component>
   <component name="RunManager">
     <configuration name="libmyFiniteVolume.so" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="rotEqTotalPressure" TARGET_NAME="libmyFiniteVolume.so" CONFIG_NAME="Debug">
@@ -92,7 +92,8 @@
       <updated>1591619414861</updated>
       <workItem from="1591619418506" duration="212000" />
       <workItem from="1591619632299" duration="12780000" />
-      <workItem from="1591703672959" duration="15016000" />
+      <workItem from="1591703672959" duration="15212000" />
+      <workItem from="1591785841128" duration="625000" />
     </task>
     <task id="LOCAL-00001" summary="Added rMin_ and dp0dr_ variables.">
       <created>1591640431480</created>
@@ -108,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591715030986</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Tested over a few time-steps.">
+      <created>1591726914346</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1591726914346</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,13 +137,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added rMin_ and dp0dr_ variables." />
     <MESSAGE value="First implementation. Not 100% convinced that radius calculation is general yet." />
-    <option name="LAST_COMMIT_MESSAGE" value="First implementation. Not 100% convinced that radius calculation is general yet." />
+    <MESSAGE value="Tested over a few time-steps." />
+    <option name="LAST_COMMIT_MESSAGE" value="Tested over a few time-steps." />
   </component>
   <component name="WindowStateProjectService">
     <state x="2542" y="265" width="666" height="584" key="#libmyFiniteVolume.so" timestamp="1591632866949">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2542" y="265" width="666" height="584" key="#libmyFiniteVolume.so/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1591632866949" />
+    <state x="100" y="127" width="1720" height="853" key="DiffContextDialog" timestamp="1591786457114">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="100" y="127" width="1720" height="853" key="DiffContextDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1591786457114" />
     <state x="2663" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1591619621551">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -148,10 +161,18 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="640" height="476" key="ImportCMakeProjectWizard.topPanel/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1591619625936" />
-    <state x="2475" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1591715033355">
+    <state x="534" y="237" width="842" height="640" key="RollbackChangesDialog" timestamp="1591786348392">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="534" y="237" width="842" height="640" key="RollbackChangesDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1591786348392" />
+    <state x="449" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1591786449420">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="449" y="188" width="1022" height="737" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1591786449420" />
+    <state x="2475" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1591726916143">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2475" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1591715033355" />
+    <state x="2475" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1591726916143" />
     <state x="2754" y="409" width="250" height="278" key="jetbrains.javascript.buildTools.run-task-popup" timestamp="1591715040778">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
