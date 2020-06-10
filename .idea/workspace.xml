@@ -30,8 +30,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49a05039-cf6e-4dee-9ca3-abdddd8e26bc" name="Default Changelist" comment="Tested over a few time-steps.">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rotEqTotalPressureFvPatchScalarField.C" beforeDir="false" afterPath="$PROJECT_DIR$/rotEqTotalPressureFvPatchScalarField.C" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +91,7 @@
       <workItem from="1591619418506" duration="212000" />
       <workItem from="1591619632299" duration="12780000" />
       <workItem from="1591703672959" duration="15212000" />
-      <workItem from="1591785841128" duration="625000" />
+      <workItem from="1591785841128" duration="713000" />
     </task>
     <task id="LOCAL-00001" summary="Added rMin_ and dp0dr_ variables.">
       <created>1591640431480</created>
@@ -116,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591726914346</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Tested over a few time-steps.">
+      <created>1591786476139</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1591786476139</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,9 +174,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="449" y="188" width="1022" height="737" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1591786449420" />
-    <state x="2475" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1591726916143">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="555" y="309" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1591786477759">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
+    <state x="555" y="309" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1591786477759" />
     <state x="2475" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1591726916143" />
     <state x="2754" y="409" width="250" height="278" key="jetbrains.javascript.buildTools.run-task-popup" timestamp="1591715040778">
       <screen x="1920" y="0" width="1920" height="1080" />
