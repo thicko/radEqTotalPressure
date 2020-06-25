@@ -12,7 +12,7 @@ Adapted from `Foam::rotatingTotalPressureFvPatchScalarField` (https://openfoam.o
 
 Tell OpenFOAM to dynamically link the library by including
 
-```c
+```
 libs
 (
     "librotEqTotalPressureFvPatchScalarField.so"
@@ -23,7 +23,7 @@ in `<MY_CASE>/system/controlDict`.
 
 In the file `<MY_CASE>/0/p` or `<MY_CASE>/0/p_rgh`, the boundary condition can be set using e.g.:
 
-```c
+```
 <PATCH_NAME>
 {
     type            rotEqTotalPressure;
@@ -51,8 +51,8 @@ Property     | Description             | Required    | Default value
 
 The boundary condition is currently restricted to rotation around the Z-axis, so `omega` should be specified in the form
 
-```c
-omega (0 0 w)
+```
+omega (0 0 w);
 ```
 
 where `w` is the frame rotational speed in rad/s.
