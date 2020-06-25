@@ -29,8 +29,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49a05039-cf6e-4dee-9ca3-abdddd8e26bc" name="Default Changelist" comment="Tested over a few time-steps.">
+    <list default="true" id="49a05039-cf6e-4dee-9ca3-abdddd8e26bc" name="Default Changelist" comment="Code tidy.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rotEqTotalPressureFvPatchScalarField.C" beforeDir="false" afterPath="$PROJECT_DIR$/rotEqTotalPressureFvPatchScalarField.C" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rotEqTotalPressureFvPatchScalarField.H" beforeDir="false" afterPath="$PROJECT_DIR$/rotEqTotalPressureFvPatchScalarField.H" afterDir="false" />
     </list>
@@ -71,7 +72,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager">
     <configuration name="libmyFiniteVolume.so" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="rotEqTotalPressure" TARGET_NAME="libmyFiniteVolume.so" CONFIG_NAME="Debug">
@@ -95,7 +96,9 @@
       <workItem from="1591703672959" duration="15212000" />
       <workItem from="1591785841128" duration="951000" />
       <workItem from="1593092169261" duration="13000" />
-      <workItem from="1593093111087" duration="1463000" />
+      <workItem from="1593093111087" duration="3770000" />
+      <workItem from="1593098035895" duration="1000" />
+      <workItem from="1593101561199" duration="1933000" />
     </task>
     <task id="LOCAL-00001" summary="Added rMin_ and dp0dr_ variables.">
       <created>1591640431480</created>
@@ -139,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591786781577</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Code tidy.">
+      <created>1593094594840</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1593094594840</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,7 +171,8 @@
     <MESSAGE value="Added rMin_ and dp0dr_ variables." />
     <MESSAGE value="First implementation. Not 100% convinced that radius calculation is general yet." />
     <MESSAGE value="Tested over a few time-steps." />
-    <option name="LAST_COMMIT_MESSAGE" value="Tested over a few time-steps." />
+    <MESSAGE value="Code tidy." />
+    <option name="LAST_COMMIT_MESSAGE" value="Code tidy." />
   </component>
   <component name="WindowStateProjectService">
     <state x="2542" y="265" width="666" height="584" key="#libmyFiniteVolume.so" timestamp="1591632866949">
@@ -188,15 +199,16 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="534" y="237" width="842" height="640" key="RollbackChangesDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1591786348392" />
-    <state x="449" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1591786449420">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state x="2608" y="173" width="1022" height="737" key="SettingsEditor" timestamp="1593094933821">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="449" y="188" width="1022" height="737" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1591786449420" />
-    <state x="555" y="309" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1591786782930">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state x="2608" y="173" width="1022" height="737" key="SettingsEditor/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1593094933821" />
+    <state x="2475" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1593094596673">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="555" y="309" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1591786782930" />
-    <state x="2475" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1591726916143" />
+    <state x="2475" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1593094596673" />
     <state x="731" y="455" width="447" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593093162045">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>

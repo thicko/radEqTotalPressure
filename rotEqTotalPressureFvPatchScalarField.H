@@ -15,7 +15,9 @@ Usage
         psi          | compressibility field name | no       | none
         gamma        | ratio of specific heats (Cp/Cv) | yes |
         p0           | static pressure reference | yes       |
-        omega        | angular velocty of the frame [rad/s] | yes    |
+        omega        | angular velocity of the frame [rad/s] | yes    | none
+        dp0dr        | radial total pressure gradient | yes | none
+        rRef             | reference radial location for p0   | none
     \endtable
 
     Example of the boundary condition specification:
@@ -117,7 +119,7 @@ public:
         );
 
         //- Construct and return a clone
-        virtual tmp<fvPatchScalarField> clone() const
+        tmp<fvPatchScalarField> clone() const override
         {
             return tmp<fvPatchScalarField>
             (
@@ -133,10 +135,10 @@ public:
         );
 
         //- Construct and return a clone setting internal field reference
-        virtual tmp<fvPatchScalarField> clone
+        tmp<fvPatchScalarField> clone
         (
             const DimensionedField<scalar, volMesh>& iF
-        ) const
+        ) const override
         {
             return tmp<fvPatchScalarField>
             (
@@ -150,11 +152,11 @@ public:
         // Evaluation functions
 
             //- Update the coefficients associated with the patch field
-            virtual void updateCoeffs();
+            void updateCoeffs() override ;
 
 
         //- Write
-        virtual void write(Ostream&) const;
+        void write(Ostream&) const override;
 };
 
 
