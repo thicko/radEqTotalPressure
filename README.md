@@ -1,7 +1,7 @@
 # rotEqTotalPressure
 Radially varying total pressure boundary condition for OpenFOAM. 
 Adapted from `Foam::rotatingTotalPressureFvPatchScalarField`. 
-(https://github.com/OpenFOAM/OpenFOAM-dev/tree/master/src/finiteVolume/fields/fvPatchFields/derived/rotatingTotalPressure)
+(https://github.com/OpenFOAM/OpenFOAM-7/tree/master/src/finiteVolume/fields/fvPatchFields/derived/rotatingTotalPressure)
 
 ## Installation
 
