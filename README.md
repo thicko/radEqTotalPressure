@@ -1,5 +1,5 @@
-# rotEqTotalPressure
-Radially varying total pressure boundary condition for OpenFOAM. 
+# radEqTotalPressure
+Radial equilibrium total pressure boundary condition for OpenFOAM. 
 Adapted from `Foam::rotatingTotalPressureFvPatchScalarField`. 
 (https://github.com/OpenFOAM/OpenFOAM-7/tree/master/src/finiteVolume/fields/fvPatchFields/derived/rotatingTotalPressure)
 
@@ -8,6 +8,11 @@ Adapted from `Foam::rotatingTotalPressureFvPatchScalarField`.
 1. Clone the repository into `$WM_PROJECT_USER_DIR/src/finiteVolume/fields/fvPatchFields/derived`.
 2. Copy the make directory to `$WM_PROJECT_USER_DIR/src/finiteVolumne`.
 3. Run `wmake libso` in `$WM_PROJECT_USER_DIR/src/finiteVolume`.
+
+## Todo
+[ ] Set up test cases and testing with github actions.
+[ ] Add support for general rotation axes (currently limited to z-axis rotation only).
+[ ] Calculate radial equilibrium instead of passing in `dp0dr`.
 
 ## Use
 
@@ -49,13 +54,3 @@ Property     | Description             | Required    | Default value
 `omega`        | angular velocity of the frame [rad/s] | yes    | none
 `dp0dr`        | radial total pressure gradient | yes | none
 `rRef`         | reference radial location for p0 |  yes| none
-
-The boundary condition is currently restricted to rotation around the Z-axis, so `omega` should be specified in the form
-
-```
-omega (0 0 w);
-```
-
-where `w` is the frame rotational speed in rad/s.
-
-
