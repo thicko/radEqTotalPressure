@@ -9,19 +9,22 @@ Adapted from `Foam::rotatingTotalPressureFvPatchScalarField`.
 2. Copy the make directory to `$WM_PROJECT_USER_DIR/src/finiteVolumne`.
 3. Run `wmake libso` in `$WM_PROJECT_USER_DIR/src/finiteVolume`.
 
-## Todo
-[ ] Set up test cases and testing with github actions.
-[ ] Add support for general rotation axes (currently limited to z-axis rotation only).
-[ ] Calculate radial equilibrium instead of passing in `dp0dr`.
+## TODO
 
-## Use
+- [ ] Set up test cases and testing with github actions.
+
+- [ ] Add support for general rotation axes (currently limited to z-axis rotation only).
+
+- [ ] Calculate radial equilibrium instead of passing in `dp0dr`.
+
+## Usage
 
 Tell OpenFOAM to dynamically link the library by including
 
 ```
 libs
 (
-    "librotEqTotalPressureFvPatchScalarField.so"
+    "libradEqTotalPressureFvPatchScalarField.so"
 );
 ```
 
