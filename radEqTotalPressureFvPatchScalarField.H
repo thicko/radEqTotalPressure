@@ -1,6 +1,6 @@
 /*---------------------------------------------------------------------------*\
 Class
-    Foam::rotEqTotalPressureFvPatchScalarField
+    Foam::radEqTotalPressureFvPatchScalarField
 
 Description
     This boundary condition provides a total pressure condition for patches
@@ -43,7 +43,7 @@ See also
     Foam::Function1Types
 
 SourceFiles
-    rotEqTotalPressureFvPatchScalarField.C
+    radEqTotalPressureFvPatchScalarField.C
 
 \*---------------------------------------------------------------------------*/
 
@@ -59,11 +59,11 @@ namespace Foam
 {
 
 /*---------------------------------------------------------------------------*\
-           Class rotEqTotalPressureFvPatchScalarField Declaration
+           Class radEqTotalPressureFvPatchScalarField Declaration
 \*---------------------------------------------------------------------------*/
 
 
-class rotEqTotalPressureFvPatchScalarField
+class radEqTotalPressureFvPatchScalarField
 :
     public totalPressureFvPatchScalarField
 {
@@ -82,40 +82,40 @@ class rotEqTotalPressureFvPatchScalarField
 public:
 
     //- Runtime type information
-    TypeName("rotEqTotalPressure");
+    TypeName("radEqTotalPressure");
 
 
     // Constructors
 
         //- Construct from patch and internal field
-        rotEqTotalPressureFvPatchScalarField
+        radEqTotalPressureFvPatchScalarField
         (
             const fvPatch&,
             const DimensionedField<scalar, volMesh>&
         );
 
         //- Construct from patch, internal field and dictionary
-        rotEqTotalPressureFvPatchScalarField
+        radEqTotalPressureFvPatchScalarField
         (
             const fvPatch&,
             const DimensionedField<scalar, volMesh>&,
             const dictionary&
         );
 
-        //- Construct by mapping given rotEqTotalPressureFvPatchScalarField
+        //- Construct by mapping given radEqTotalPressureFvPatchScalarField
         //  onto a new patch
-        rotEqTotalPressureFvPatchScalarField
+        radEqTotalPressureFvPatchScalarField
         (
-            const rotEqTotalPressureFvPatchScalarField&,
+            const radEqTotalPressureFvPatchScalarField&,
             const fvPatch&,
             const DimensionedField<scalar, volMesh>&,
             const fvPatchFieldMapper&
         );
 
         //- Copy constructor
-        rotEqTotalPressureFvPatchScalarField
+        radEqTotalPressureFvPatchScalarField
         (
-            const rotEqTotalPressureFvPatchScalarField&
+            const radEqTotalPressureFvPatchScalarField&
         );
 
         //- Construct and return a clone
@@ -123,14 +123,14 @@ public:
         {
             return tmp<fvPatchScalarField>
             (
-                new rotEqTotalPressureFvPatchScalarField(*this)
+                new radEqTotalPressureFvPatchScalarField(*this)
             );
         }
 
         //- Copy constructor setting internal field reference
-        rotEqTotalPressureFvPatchScalarField
+        radEqTotalPressureFvPatchScalarField
         (
-            const rotEqTotalPressureFvPatchScalarField&,
+            const radEqTotalPressureFvPatchScalarField&,
             const DimensionedField<scalar, volMesh>&
         );
 
@@ -142,7 +142,7 @@ public:
         {
             return tmp<fvPatchScalarField>
             (
-                new rotEqTotalPressureFvPatchScalarField(*this, iF)
+                new radEqTotalPressureFvPatchScalarField(*this, iF)
             );
         }
 

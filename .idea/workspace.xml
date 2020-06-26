@@ -29,7 +29,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49a05039-cf6e-4dee-9ca3-abdddd8e26bc" name="Default Changelist" comment="Code-review." />
+    <list default="true" id="49a05039-cf6e-4dee-9ca3-abdddd8e26bc" name="Default Changelist" comment="Code-review.">
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rotEqTotalPressureFvPatchScalarField.C" beforeDir="false" afterPath="$PROJECT_DIR$/radEqTotalPressureFvPatchScalarField.C" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rotEqTotalPressureFvPatchScalarField.H" beforeDir="false" afterPath="$PROJECT_DIR$/radEqTotalPressureFvPatchScalarField.H" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,6 +98,7 @@
       <workItem from="1593093111087" duration="3770000" />
       <workItem from="1593098035895" duration="1000" />
       <workItem from="1593101561199" duration="2372000" />
+      <workItem from="1593185000876" duration="103000" />
     </task>
     <task id="LOCAL-00001" summary="Added rMin_ and dp0dr_ variables.">
       <created>1591640431480</created>
@@ -230,6 +235,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="731" y="455" width="447" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1593093162045" />
+    <state x="100" y="127" width="1720" height="853" key="dock-window-1" timestamp="1593185105321">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="100" y="127" width="1720" height="853" key="dock-window-1/0.27.1920.1053@0.27.1920.1053" timestamp="1593185105321" />
     <state x="2754" y="409" width="250" height="278" key="jetbrains.javascript.buildTools.run-task-popup" timestamp="1591715040778">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>

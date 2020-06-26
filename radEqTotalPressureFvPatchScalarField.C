@@ -1,4 +1,4 @@
-#include "rotEqTotalPressureFvPatchScalarField.H"
+#include "radEqTotalPressureFvPatchScalarField.H"
 #include "addToRunTimeSelectionTable.H"
 #include "fvPatchFieldMapper.H"
 #include "volFields.H"
@@ -6,8 +6,8 @@
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 
-Foam::rotEqTotalPressureFvPatchScalarField::
-rotEqTotalPressureFvPatchScalarField
+Foam::radEqTotalPressureFvPatchScalarField::
+radEqTotalPressureFvPatchScalarField
 (
     const fvPatch& p,
     const DimensionedField<scalar, volMesh>& iF
@@ -20,10 +20,10 @@ rotEqTotalPressureFvPatchScalarField
 {}
 
 
-Foam::rotEqTotalPressureFvPatchScalarField::
-rotEqTotalPressureFvPatchScalarField
+Foam::radEqTotalPressureFvPatchScalarField::
+radEqTotalPressureFvPatchScalarField
 (
-    const rotEqTotalPressureFvPatchScalarField& ptf,
+    const radEqTotalPressureFvPatchScalarField& ptf,
     const fvPatch& p,
     const DimensionedField<scalar, volMesh>& iF,
     const fvPatchFieldMapper& mapper
@@ -36,8 +36,8 @@ rotEqTotalPressureFvPatchScalarField
 {}
 
 
-Foam::rotEqTotalPressureFvPatchScalarField::
-rotEqTotalPressureFvPatchScalarField
+Foam::radEqTotalPressureFvPatchScalarField::
+radEqTotalPressureFvPatchScalarField
 (
     const fvPatch& p,
     const DimensionedField<scalar, volMesh>& iF,
@@ -51,10 +51,10 @@ rotEqTotalPressureFvPatchScalarField
 {}
 
 
-Foam::rotEqTotalPressureFvPatchScalarField::
-rotEqTotalPressureFvPatchScalarField
+Foam::radEqTotalPressureFvPatchScalarField::
+radEqTotalPressureFvPatchScalarField
 (
-    const rotEqTotalPressureFvPatchScalarField& retppsf
+    const radEqTotalPressureFvPatchScalarField& retppsf
 )
 :
     totalPressureFvPatchScalarField(retppsf),
@@ -64,10 +64,10 @@ rotEqTotalPressureFvPatchScalarField
 {}
 
 
-Foam::rotEqTotalPressureFvPatchScalarField::
-rotEqTotalPressureFvPatchScalarField
+Foam::radEqTotalPressureFvPatchScalarField::
+radEqTotalPressureFvPatchScalarField
 (
-    const rotEqTotalPressureFvPatchScalarField& retppsf,
+    const radEqTotalPressureFvPatchScalarField& retppsf,
     const DimensionedField<scalar, volMesh>& iF
 )
 :
@@ -80,7 +80,7 @@ rotEqTotalPressureFvPatchScalarField
 
 // * * * * * * * * * * * * * * * Member Functions  * * * * * * * * * * * * * //
 
-void Foam::rotEqTotalPressureFvPatchScalarField::updateCoeffs()
+void Foam::radEqTotalPressureFvPatchScalarField::updateCoeffs()
 {
     if (updated())
     {
@@ -113,7 +113,7 @@ void Foam::rotEqTotalPressureFvPatchScalarField::updateCoeffs()
 }
 
 
-void Foam::rotEqTotalPressureFvPatchScalarField::write(Ostream& os) const
+void Foam::radEqTotalPressureFvPatchScalarField::write(Ostream& os) const
 {
     totalPressureFvPatchScalarField::write(os);
     writeEntry(os, omega_());
@@ -128,8 +128,8 @@ namespace Foam
 {
     makePatchTypeField
     (
-        fvPatchScalarField,
-        rotEqTotalPressureFvPatchScalarField
+    fvPatchScalarField,
+    radEqTotalPressureFvPatchScalarField
     );
 }
 
